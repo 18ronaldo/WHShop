@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
-
+#import "WHTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -29,7 +28,7 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ViewController *viewController = [[ViewController alloc] init];
+    WHTabBarViewController *viewController = [[WHTabBarViewController alloc] init];
     
     self.window.rootViewController = viewController;
     

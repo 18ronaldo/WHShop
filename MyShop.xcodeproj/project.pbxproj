@@ -15,6 +15,11 @@
 		7BFC6DB91F9F000C006042AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BFC6DB71F9F000C006042AE /* LaunchScreen.storyboard */; };
 		7BFC6DC41F9F000C006042AE /* MyShopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DC31F9F000C006042AE /* MyShopUITests.m */; };
 		7BFC6DD91F9F7C2E006042AE /* WHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DD81F9F7C2E006042AE /* WHTabBarViewController.m */; };
+		7BFC6DDC1F9F8D6D006042AE /* WHTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DDB1F9F8D6D006042AE /* WHTimeViewController.m */; };
+		7BFC6DDF1F9F8D7D006042AE /* WHClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DDE1F9F8D7D006042AE /* WHClassViewController.m */; };
+		7BFC6DE21F9F8D90006042AE /* WHBuyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DE11F9F8D90006042AE /* WHBuyCarViewController.m */; };
+		7BFC6DE51F9F8D9B006042AE /* WHMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DE41F9F8D9B006042AE /* WHMyViewController.m */; };
+		7BFC6DE71F9F8E24006042AE /* WHTabBarViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BFC6DE61F9F8E24006042AE /* WHTabBarViewController.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,15 @@
 		7BFC6DC51F9F000C006042AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BFC6DD71F9F7C2E006042AE /* WHTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHTabBarViewController.h; sourceTree = "<group>"; };
 		7BFC6DD81F9F7C2E006042AE /* WHTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTabBarViewController.m; sourceTree = "<group>"; };
+		7BFC6DDA1F9F8D6D006042AE /* WHTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHTimeViewController.h; sourceTree = "<group>"; };
+		7BFC6DDB1F9F8D6D006042AE /* WHTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTimeViewController.m; sourceTree = "<group>"; };
+		7BFC6DDD1F9F8D7D006042AE /* WHClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHClassViewController.h; sourceTree = "<group>"; };
+		7BFC6DDE1F9F8D7D006042AE /* WHClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHClassViewController.m; sourceTree = "<group>"; };
+		7BFC6DE01F9F8D90006042AE /* WHBuyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHBuyCarViewController.h; sourceTree = "<group>"; };
+		7BFC6DE11F9F8D90006042AE /* WHBuyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHBuyCarViewController.m; sourceTree = "<group>"; };
+		7BFC6DE31F9F8D9B006042AE /* WHMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMyViewController.h; sourceTree = "<group>"; };
+		7BFC6DE41F9F8D9B006042AE /* WHMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMyViewController.m; sourceTree = "<group>"; };
+		7BFC6DE61F9F8E24006042AE /* WHTabBarViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WHTabBarViewController.plist; sourceTree = "<group>"; };
 		8CE9AAE0FB4402203A782168 /* libPods-MyShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD4ACA1D6FFF5916186EB01 /* Pods-MyShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyShop/Pods-MyShop.debug.xcconfig"; sourceTree = "<group>"; };
 		BEFC063E9962F3801891571E /* Pods-MyShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyShop/Pods-MyShop.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +116,15 @@
 				7BFC6DAD1F9F000C006042AE /* AppDelegate.m */,
 				7BFC6DD71F9F7C2E006042AE /* WHTabBarViewController.h */,
 				7BFC6DD81F9F7C2E006042AE /* WHTabBarViewController.m */,
+				7BFC6DE61F9F8E24006042AE /* WHTabBarViewController.plist */,
+				7BFC6DDA1F9F8D6D006042AE /* WHTimeViewController.h */,
+				7BFC6DDB1F9F8D6D006042AE /* WHTimeViewController.m */,
+				7BFC6DDD1F9F8D7D006042AE /* WHClassViewController.h */,
+				7BFC6DDE1F9F8D7D006042AE /* WHClassViewController.m */,
+				7BFC6DE01F9F8D90006042AE /* WHBuyCarViewController.h */,
+				7BFC6DE11F9F8D90006042AE /* WHBuyCarViewController.m */,
+				7BFC6DE31F9F8D9B006042AE /* WHMyViewController.h */,
+				7BFC6DE41F9F8D9B006042AE /* WHMyViewController.m */,
 				7BFC6DAF1F9F000C006042AE /* ViewController.h */,
 				7BFC6DB01F9F000C006042AE /* ViewController.m */,
 				7BFC6DB51F9F000C006042AE /* Assets.xcassets */,
@@ -225,6 +248,7 @@
 			files = (
 				7BFC6DB91F9F000C006042AE /* LaunchScreen.storyboard in Resources */,
 				7BFC6DB61F9F000C006042AE /* Assets.xcassets in Resources */,
+				7BFC6DE71F9F8E24006042AE /* WHTabBarViewController.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,10 +314,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFC6DDF1F9F8D7D006042AE /* WHClassViewController.m in Sources */,
 				7BFC6DB11F9F000C006042AE /* ViewController.m in Sources */,
+				7BFC6DE21F9F8D90006042AE /* WHBuyCarViewController.m in Sources */,
+				7BFC6DE51F9F8D9B006042AE /* WHMyViewController.m in Sources */,
 				7BFC6DD91F9F7C2E006042AE /* WHTabBarViewController.m in Sources */,
 				7BFC6DAE1F9F000C006042AE /* AppDelegate.m in Sources */,
 				7BFC6DAB1F9F000C006042AE /* main.m in Sources */,
+				7BFC6DDC1F9F8D6D006042AE /* WHTimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

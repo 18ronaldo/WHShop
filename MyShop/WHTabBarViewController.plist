@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>tabBarImage</key>
+		<string>菜单栏限时特卖按钮未选中状态</string>
+		<key>tabBarSelectedImage</key>
+		<string>菜单栏限时特卖按钮选中状态</string>
+		<key>tabBarTitle</key>
+		<string>限时购</string>
+		<key>tabBarController</key>
+		<string>WHTimeViewController</string>
+	</dict>
+	<dict>
+		<key>tabBarImage</key>
+		<string>菜单栏分类按钮未选中状态</string>
+		<key>tabBarSelectedImage</key>
+		<string>菜单栏分类按钮选中状态</string>
+		<key>tabBarTitle</key>
+		<string>分类</string>
+		<key>tabBarController</key>
+		<string>WHClassViewController</string>
+	</dict>
+	<dict>
+		<key>tabBarImage</key>
+		<string>菜单栏购物车按钮未选中状态</string>
+		<key>tabBarSelectedImage</key>
+		<string>菜单栏购物车按钮选中状态</string>
+		<key>tabBarTitle</key>
+		<string>购物车</string>
+		<key>tabBarController</key>
+		<string>WHBuyCarViewController</string>
+	</dict>
+	<dict>
+		<key>tabBarImage</key>
+		<string>菜单栏我的按钮未选中状态</string>
+		<key>tabBarSelectedImage</key>
+		<string>菜单栏我的按钮选中状态</string>
+		<key>tabBarTitle</key>
+		<string>我的</string>
+		<key>tabBarController</key>
+		<string>WHMyViewController</string>
+	</dict>
+</array>
+</plist>

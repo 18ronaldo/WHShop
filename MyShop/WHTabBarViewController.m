@@ -7,6 +7,7 @@
 //
 
 #import "WHTabBarViewController.h"
+#import "WHNavigationController.h"
 
 @interface WHTabBarViewController ()
 
@@ -40,8 +41,10 @@
         UIViewController *viewController = [[viewControllerClass alloc] init];
         viewController.tabBarItem.image = [UIImage imageNamed:dict[@"tabBarImage"]];
         viewController.tabBarItem.selectedImage = [UIImage imageNamed:dict[@"tabBarSelectedImage"]];
-        viewController.tabBarItem.title = dict[@"tabBarTitle"];
-        [self addChildViewController:viewController];
+//        viewController.tabBarItem.title = dict[@"tabBarTitle"];
+        viewController.title = dict[@"tabBarTitle"];
+        WHNavigationController *navigationController = [[WHNavigationController alloc] initWithRootViewController:viewController];
+        [self addChildViewController:navigationController];
     }
     
 }

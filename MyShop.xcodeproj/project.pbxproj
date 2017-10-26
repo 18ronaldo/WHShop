@@ -10,17 +10,16 @@
 		0C473F72F2D6B7B7D79BA3DE /* libPods-MyShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE9AAE0FB4402203A782168 /* libPods-MyShop.a */; };
 		7BFC6DAB1F9F000C006042AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DAA1F9F000C006042AE /* main.m */; };
 		7BFC6DAE1F9F000C006042AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DAD1F9F000C006042AE /* AppDelegate.m */; };
-		7BFC6DB11F9F000C006042AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DB01F9F000C006042AE /* ViewController.m */; };
 		7BFC6DB61F9F000C006042AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFC6DB51F9F000C006042AE /* Assets.xcassets */; };
 		7BFC6DB91F9F000C006042AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BFC6DB71F9F000C006042AE /* LaunchScreen.storyboard */; };
 		7BFC6DC41F9F000C006042AE /* MyShopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DC31F9F000C006042AE /* MyShopUITests.m */; };
-		7BFC6DD91F9F7C2E006042AE /* WHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DD81F9F7C2E006042AE /* WHTabBarViewController.m */; };
-		7BFC6DDC1F9F8D6D006042AE /* WHTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DDB1F9F8D6D006042AE /* WHTimeViewController.m */; };
-		7BFC6DDF1F9F8D7D006042AE /* WHClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DDE1F9F8D7D006042AE /* WHClassViewController.m */; };
-		7BFC6DE21F9F8D90006042AE /* WHBuyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DE11F9F8D90006042AE /* WHBuyCarViewController.m */; };
-		7BFC6DE51F9F8D9B006042AE /* WHMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DE41F9F8D9B006042AE /* WHMyViewController.m */; };
-		7BFC6DE71F9F8E24006042AE /* WHTabBarViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BFC6DE61F9F8E24006042AE /* WHTabBarViewController.plist */; };
-		7BFC6DEA1FA185CC006042AE /* WHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DE91FA185CC006042AE /* WHNavigationController.m */; };
+		7BFC6E0D1FA19126006042AE /* WHClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DEE1FA19126006042AE /* WHClassViewController.m */; };
+		7BFC6E0E1FA19126006042AE /* WHBuyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DF51FA19126006042AE /* WHBuyCarViewController.m */; };
+		7BFC6E0F1FA19126006042AE /* WHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DFB1FA19126006042AE /* WHNavigationController.m */; };
+		7BFC6E101FA19126006042AE /* WHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DFD1FA19126006042AE /* WHTabBarViewController.m */; };
+		7BFC6E111FA19126006042AE /* WHTabBarViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BFC6DFE1FA19126006042AE /* WHTabBarViewController.plist */; };
+		7BFC6E121FA19126006042AE /* WHMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6E021FA19126006042AE /* WHMyViewController.m */; };
+		7BFC6E131FA19126006042AE /* WHTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6E091FA19126006042AE /* WHTimeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,27 +37,25 @@
 		7BFC6DAA1F9F000C006042AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BFC6DAC1F9F000C006042AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7BFC6DAD1F9F000C006042AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7BFC6DAF1F9F000C006042AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7BFC6DB01F9F000C006042AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7BFC6DB51F9F000C006042AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BFC6DB81F9F000C006042AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BFC6DBA1F9F000C006042AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BFC6DBF1F9F000C006042AE /* MyShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFC6DC31F9F000C006042AE /* MyShopUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyShopUITests.m; sourceTree = "<group>"; };
 		7BFC6DC51F9F000C006042AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BFC6DD71F9F7C2E006042AE /* WHTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHTabBarViewController.h; sourceTree = "<group>"; };
-		7BFC6DD81F9F7C2E006042AE /* WHTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTabBarViewController.m; sourceTree = "<group>"; };
-		7BFC6DDA1F9F8D6D006042AE /* WHTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHTimeViewController.h; sourceTree = "<group>"; };
-		7BFC6DDB1F9F8D6D006042AE /* WHTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTimeViewController.m; sourceTree = "<group>"; };
-		7BFC6DDD1F9F8D7D006042AE /* WHClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHClassViewController.h; sourceTree = "<group>"; };
-		7BFC6DDE1F9F8D7D006042AE /* WHClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHClassViewController.m; sourceTree = "<group>"; };
-		7BFC6DE01F9F8D90006042AE /* WHBuyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHBuyCarViewController.h; sourceTree = "<group>"; };
-		7BFC6DE11F9F8D90006042AE /* WHBuyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHBuyCarViewController.m; sourceTree = "<group>"; };
-		7BFC6DE31F9F8D9B006042AE /* WHMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMyViewController.h; sourceTree = "<group>"; };
-		7BFC6DE41F9F8D9B006042AE /* WHMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMyViewController.m; sourceTree = "<group>"; };
-		7BFC6DE61F9F8E24006042AE /* WHTabBarViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WHTabBarViewController.plist; sourceTree = "<group>"; };
-		7BFC6DE81FA185CC006042AE /* WHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHNavigationController.h; sourceTree = "<group>"; };
-		7BFC6DE91FA185CC006042AE /* WHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHNavigationController.m; sourceTree = "<group>"; };
+		7BFC6DED1FA19126006042AE /* WHClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHClassViewController.h; sourceTree = "<group>"; };
+		7BFC6DEE1FA19126006042AE /* WHClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHClassViewController.m; sourceTree = "<group>"; };
+		7BFC6DF41FA19126006042AE /* WHBuyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHBuyCarViewController.h; sourceTree = "<group>"; };
+		7BFC6DF51FA19126006042AE /* WHBuyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHBuyCarViewController.m; sourceTree = "<group>"; };
+		7BFC6DFA1FA19126006042AE /* WHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHNavigationController.h; sourceTree = "<group>"; };
+		7BFC6DFB1FA19126006042AE /* WHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHNavigationController.m; sourceTree = "<group>"; };
+		7BFC6DFC1FA19126006042AE /* WHTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHTabBarViewController.h; sourceTree = "<group>"; };
+		7BFC6DFD1FA19126006042AE /* WHTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTabBarViewController.m; sourceTree = "<group>"; };
+		7BFC6DFE1FA19126006042AE /* WHTabBarViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WHTabBarViewController.plist; sourceTree = "<group>"; };
+		7BFC6E011FA19126006042AE /* WHMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMyViewController.h; sourceTree = "<group>"; };
+		7BFC6E021FA19126006042AE /* WHMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMyViewController.m; sourceTree = "<group>"; };
+		7BFC6E081FA19126006042AE /* WHTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHTimeViewController.h; sourceTree = "<group>"; };
+		7BFC6E091FA19126006042AE /* WHTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTimeViewController.m; sourceTree = "<group>"; };
 		8CE9AAE0FB4402203A782168 /* libPods-MyShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD4ACA1D6FFF5916186EB01 /* Pods-MyShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyShop/Pods-MyShop.debug.xcconfig"; sourceTree = "<group>"; };
 		BEFC063E9962F3801891571E /* Pods-MyShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyShop/Pods-MyShop.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,21 +114,11 @@
 			children = (
 				7BFC6DAC1F9F000C006042AE /* AppDelegate.h */,
 				7BFC6DAD1F9F000C006042AE /* AppDelegate.m */,
-				7BFC6DD71F9F7C2E006042AE /* WHTabBarViewController.h */,
-				7BFC6DD81F9F7C2E006042AE /* WHTabBarViewController.m */,
-				7BFC6DE61F9F8E24006042AE /* WHTabBarViewController.plist */,
-				7BFC6DE81FA185CC006042AE /* WHNavigationController.h */,
-				7BFC6DE91FA185CC006042AE /* WHNavigationController.m */,
-				7BFC6DDA1F9F8D6D006042AE /* WHTimeViewController.h */,
-				7BFC6DDB1F9F8D6D006042AE /* WHTimeViewController.m */,
-				7BFC6DDD1F9F8D7D006042AE /* WHClassViewController.h */,
-				7BFC6DDE1F9F8D7D006042AE /* WHClassViewController.m */,
-				7BFC6DE01F9F8D90006042AE /* WHBuyCarViewController.h */,
-				7BFC6DE11F9F8D90006042AE /* WHBuyCarViewController.m */,
-				7BFC6DE31F9F8D9B006042AE /* WHMyViewController.h */,
-				7BFC6DE41F9F8D9B006042AE /* WHMyViewController.m */,
-				7BFC6DAF1F9F000C006042AE /* ViewController.h */,
-				7BFC6DB01F9F000C006042AE /* ViewController.m */,
+				7BFC6DF91FA19126006042AE /* 控制器 */,
+				7BFC6E061FA19126006042AE /* 限时购 */,
+				7BFC6DEB1FA19126006042AE /* 分类 */,
+				7BFC6DF21FA19126006042AE /* 购物车 */,
+				7BFC6DFF1FA19126006042AE /* 我的 */,
 				7BFC6DB51F9F000C006042AE /* Assets.xcassets */,
 				7BFC6DB71F9F000C006042AE /* LaunchScreen.storyboard */,
 				7BFC6DBA1F9F000C006042AE /* Info.plist */,
@@ -155,6 +142,182 @@
 				7BFC6DC51F9F000C006042AE /* Info.plist */,
 			);
 			path = MyShopUITests;
+			sourceTree = "<group>";
+		};
+		7BFC6DEB1FA19126006042AE /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				7BFC6DEC1FA19126006042AE /* controller */,
+				7BFC6DEF1FA19126006042AE /* model */,
+				7BFC6DF01FA19126006042AE /* tool */,
+				7BFC6DF11FA19126006042AE /* view */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		7BFC6DEC1FA19126006042AE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BFC6DED1FA19126006042AE /* WHClassViewController.h */,
+				7BFC6DEE1FA19126006042AE /* WHClassViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7BFC6DEF1FA19126006042AE /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7BFC6DF01FA19126006042AE /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		7BFC6DF11FA19126006042AE /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7BFC6DF21FA19126006042AE /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				7BFC6DF31FA19126006042AE /* controller */,
+				7BFC6DF61FA19126006042AE /* model */,
+				7BFC6DF71FA19126006042AE /* tool */,
+				7BFC6DF81FA19126006042AE /* view */,
+			);
+			path = "购物车";
+			sourceTree = "<group>";
+		};
+		7BFC6DF31FA19126006042AE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BFC6DF41FA19126006042AE /* WHBuyCarViewController.h */,
+				7BFC6DF51FA19126006042AE /* WHBuyCarViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7BFC6DF61FA19126006042AE /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7BFC6DF71FA19126006042AE /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		7BFC6DF81FA19126006042AE /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7BFC6DF91FA19126006042AE /* 控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				7BFC6DFA1FA19126006042AE /* WHNavigationController.h */,
+				7BFC6DFB1FA19126006042AE /* WHNavigationController.m */,
+				7BFC6DFC1FA19126006042AE /* WHTabBarViewController.h */,
+				7BFC6DFD1FA19126006042AE /* WHTabBarViewController.m */,
+				7BFC6DFE1FA19126006042AE /* WHTabBarViewController.plist */,
+			);
+			path = "控制器";
+			sourceTree = "<group>";
+		};
+		7BFC6DFF1FA19126006042AE /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				7BFC6E001FA19126006042AE /* controller */,
+				7BFC6E031FA19126006042AE /* model */,
+				7BFC6E041FA19126006042AE /* tool */,
+				7BFC6E051FA19126006042AE /* view */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		7BFC6E001FA19126006042AE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BFC6E011FA19126006042AE /* WHMyViewController.h */,
+				7BFC6E021FA19126006042AE /* WHMyViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7BFC6E031FA19126006042AE /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7BFC6E041FA19126006042AE /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		7BFC6E051FA19126006042AE /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7BFC6E061FA19126006042AE /* 限时购 */ = {
+			isa = PBXGroup;
+			children = (
+				7BFC6E071FA19126006042AE /* controller */,
+				7BFC6E0A1FA19126006042AE /* model */,
+				7BFC6E0B1FA19126006042AE /* tool */,
+				7BFC6E0C1FA19126006042AE /* view */,
+			);
+			path = "限时购";
+			sourceTree = "<group>";
+		};
+		7BFC6E071FA19126006042AE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BFC6E081FA19126006042AE /* WHTimeViewController.h */,
+				7BFC6E091FA19126006042AE /* WHTimeViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7BFC6E0A1FA19126006042AE /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7BFC6E0B1FA19126006042AE /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		7BFC6E0C1FA19126006042AE /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		BA141541C3F76079D1400CDB /* Frameworks */ = {
@@ -251,9 +414,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFC6E111FA19126006042AE /* WHTabBarViewController.plist in Resources */,
 				7BFC6DB91F9F000C006042AE /* LaunchScreen.storyboard in Resources */,
 				7BFC6DB61F9F000C006042AE /* Assets.xcassets in Resources */,
-				7BFC6DE71F9F8E24006042AE /* WHTabBarViewController.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,15 +482,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BFC6DDF1F9F8D7D006042AE /* WHClassViewController.m in Sources */,
-				7BFC6DB11F9F000C006042AE /* ViewController.m in Sources */,
-				7BFC6DE21F9F8D90006042AE /* WHBuyCarViewController.m in Sources */,
-				7BFC6DE51F9F8D9B006042AE /* WHMyViewController.m in Sources */,
-				7BFC6DD91F9F7C2E006042AE /* WHTabBarViewController.m in Sources */,
+				7BFC6E0E1FA19126006042AE /* WHBuyCarViewController.m in Sources */,
+				7BFC6E0D1FA19126006042AE /* WHClassViewController.m in Sources */,
+				7BFC6E101FA19126006042AE /* WHTabBarViewController.m in Sources */,
+				7BFC6E0F1FA19126006042AE /* WHNavigationController.m in Sources */,
+				7BFC6E121FA19126006042AE /* WHMyViewController.m in Sources */,
 				7BFC6DAE1F9F000C006042AE /* AppDelegate.m in Sources */,
-				7BFC6DEA1FA185CC006042AE /* WHNavigationController.m in Sources */,
 				7BFC6DAB1F9F000C006042AE /* main.m in Sources */,
-				7BFC6DDC1F9F8D6D006042AE /* WHTimeViewController.m in Sources */,
+				7BFC6E131FA19126006042AE /* WHTimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

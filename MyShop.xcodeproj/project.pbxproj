@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C473F72F2D6B7B7D79BA3DE /* libPods-MyShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE9AAE0FB4402203A782168 /* libPods-MyShop.a */; };
+		7B7FBC431FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC421FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m */; };
 		7BFC6DAB1F9F000C006042AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DAA1F9F000C006042AE /* main.m */; };
 		7BFC6DAE1F9F000C006042AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DAD1F9F000C006042AE /* AppDelegate.m */; };
 		7BFC6DB61F9F000C006042AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFC6DB51F9F000C006042AE /* Assets.xcassets */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B7FBC411FA1C7BB00C984F3 /* WHMyMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMyMessageTableViewCell.h; sourceTree = "<group>"; };
+		7B7FBC421FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMyMessageTableViewCell.m; sourceTree = "<group>"; };
 		7BFC6DA61F9F000C006042AE /* MyShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFC6DAA1F9F000C006042AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BFC6DAC1F9F000C006042AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -277,6 +280,8 @@
 		7BFC6E051FA19126006042AE /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7B7FBC411FA1C7BB00C984F3 /* WHMyMessageTableViewCell.h */,
+				7B7FBC421FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -488,6 +493,7 @@
 				7BFC6E0D1FA19126006042AE /* WHClassViewController.m in Sources */,
 				7BFC6E101FA19126006042AE /* WHTabBarViewController.m in Sources */,
 				7BFC6E0F1FA19126006042AE /* WHNavigationController.m in Sources */,
+				7B7FBC431FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m in Sources */,
 				7BFC6E121FA19126006042AE /* WHMyViewController.m in Sources */,
 				7BFC6DAE1F9F000C006042AE /* AppDelegate.m in Sources */,
 				7BFC6DAB1F9F000C006042AE /* main.m in Sources */,

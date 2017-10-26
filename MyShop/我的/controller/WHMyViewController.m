@@ -7,6 +7,7 @@
 //
 
 #import "WHMyViewController.h"
+#import "WHMyMessageTableViewCell.h"//列表中的自定义cell
 
 @interface WHMyViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -19,6 +20,8 @@
 /** 注册按钮 **/
 @property(nonatomic,strong) UIButton *registerBtn;
 @property(nonatomic,strong) UITableView *messageTable;   /**展示功能列表*/
+
+@property(nonatomic,strong) NSArray *messageTableSource;   /**message列表需要展示的数据源*/
 
 @end
 
@@ -104,11 +107,25 @@
         _messageTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 0, 0) style:UITableViewStylePlain];
         _messageTable.delegate = self;
         _messageTable.dataSource =self;
-        //继承UIScrollView的bounces属性禁止滚动
+//        继承UIScrollView的bounces属性禁止滚动
         _messageTable.bounces = NO;
     }
     return _messageTable;
 }
+- (NSArray *)messageTableSource{
+    if (!_messageTableSource) {
+        _messageTableSource = @[@{@"image":@"我的界面我的收藏图标",@"title":@"我的收藏"},
+                                @{@"image":@"我的界面意见反馈图标",@"title":@"意见反馈"},
+                                @{@"image":@"我的界面关于我们图标",@"title":@"关于我们"},
+                                @{@"image":@"我的界面客服热线图标",@"title":@"客服热线"},
+                                @{@"image":@"我的界面我的优惠券图标",@"title":@"我的优惠卷"},
+                                @{@"image":@"我的界面邀请好友图标",@"title":@"邀请好友，立刻赚钱"}
+                                ];
+    }
+    return _messageTableSource;
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 4;
 }
@@ -116,11 +133,28 @@
     return 44.0;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    WHMyMessageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell = [[WHMyMessageTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    cell.sourceDict = self.messageTableSource[indexPath.row];
+    
+    if (indexPath.row == 3) {
+        UIImageView *nextImage = [cell valueForKey:@"nextImage"];
+        nextImage.hidden = YES;
+        
+        UILabel *phoneNum = [[UILabel alloc] init];
+        phoneNum.textColor = RGB(123, 124, 128);
+        phoneNum.text = @"400-100-111";
+        [cell addSubview:phoneNum];
+        
+        __weak typeof(cell) weakSelf = cell;
+        [phoneNum mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(weakSelf.mas_centerY);
+            make.right.equalTo(weakSelf.mas_right);
+            make.size.mas_equalTo(CGSizeMake(120, 15));
+        }];
+    }
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -56,6 +56,7 @@
 		7BFC6E021FA19126006042AE /* WHMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMyViewController.m; sourceTree = "<group>"; };
 		7BFC6E081FA19126006042AE /* WHTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHTimeViewController.h; sourceTree = "<group>"; };
 		7BFC6E091FA19126006042AE /* WHTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTimeViewController.m; sourceTree = "<group>"; };
+		7BFC6E141FA1B737006042AE /* WHMyShop.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHMyShop.pch; sourceTree = "<group>"; };
 		8CE9AAE0FB4402203A782168 /* libPods-MyShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD4ACA1D6FFF5916186EB01 /* Pods-MyShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyShop/Pods-MyShop.debug.xcconfig"; sourceTree = "<group>"; };
 		BEFC063E9962F3801891571E /* Pods-MyShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyShop/Pods-MyShop.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 			children = (
 				7BFC6DAC1F9F000C006042AE /* AppDelegate.h */,
 				7BFC6DAD1F9F000C006042AE /* AppDelegate.m */,
+				7BFC6E141FA1B737006042AE /* WHMyShop.pch */,
 				7BFC6DF91FA19126006042AE /* 控制器 */,
 				7BFC6E061FA19126006042AE /* 限时购 */,
 				7BFC6DEB1FA19126006042AE /* 分类 */,
@@ -618,6 +620,7 @@
 			baseConfigurationReference = 9CD4ACA1D6FFF5916186EB01 /* Pods-MyShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MyShop/WHMyShop.pch;
 				INFOPLIST_FILE = MyShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -632,6 +635,7 @@
 			baseConfigurationReference = BEFC063E9962F3801891571E /* Pods-MyShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MyShop/WHMyShop.pch;
 				INFOPLIST_FILE = MyShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -19,7 +19,7 @@
 #define VIEW_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 #ifdef DEBUG                          //判断是不是开发，调试状态，如果是开发调试状态，就让WHLog替换NSLog
-#define WHLog(...) NSLod(__VA_ARGS__) //WHLog是不限制参数的，中间用三个英文句号(...)标识
+#define WHLog(...) NSLog(__VA_ARGS__) //WHLog是不限制参数的，中间用三个英文句号(...)标识
 #elif                                 //如果是发布状态WHLog直接为空
 #define WHLog(...)
 #endif

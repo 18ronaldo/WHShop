@@ -110,6 +110,7 @@
         _userNameText = [[UITextField alloc] init];
         _userNameText.delegate = self;
         _userNameText.placeholder = @"请输入手机号码";
+        [_userNameText addTarget:self action:@selector(userNameTextChangeText:) forControlEvents:UIControlEventEditingChanged];
     }
     return _userNameText;
 }
@@ -118,6 +119,7 @@
         _passwordText = [[UITextField alloc] init];
         _passwordText.delegate = self;
         _passwordText.placeholder = @"设置账号密码";
+        [_passwordText addTarget:self action:@selector(passwordTextChangeText:) forControlEvents:UIControlEventEditingChanged];
     }
     return _passwordText;
 }
@@ -134,6 +136,8 @@
         [_nextBtn setTitle:@"下一步" forState:UIControlStateNormal];
         _nextBtn.backgroundColor = RGB(229, 229, 229);
         [_nextBtn setTitleColor:RGB(132, 132, 132) forState:UIControlStateNormal];
+        _nextBtn.userInteractionEnabled = NO;
+        [_nextBtn addTarget:self action:@selector(pushNextViewController) forControlEvents:UIControlEventTouchUpInside];
     }
     return _nextBtn;
 }
@@ -145,6 +149,37 @@
         _goLoginBtn.backgroundColor = mainColor;
     }
     return _goLoginBtn;
+}
+#pragma mark - UITextFieldDelegate
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    if (textField == _userNameText && range.location > 10) {
+        return NO;
+    }
+    return YES;
+}
+#pragma mark - textChange
+//用户名修改内容时调用的方法
+- (void)userNameTextChangeText:(UITextField *)textField{
+    if (textField.text.length == 11 && _passwordText.text.length > 5) {
+        _nextBtn.backgroundColor = RGB(56, 165, 241);
+        _nextBtn.userInteractionEnabled = YES;
+    }else{
+        _nextBtn.backgroundColor = RGB(229, 229, 229);
+        _nextBtn.userInteractionEnabled = NO;
+    }
+}
+//密码输入框修改内容时调用的方法
+- (void)passwordTextChangeText:(UITextField *)textField{
+    if (_userNameText.text.length == 11 && textField.text.length > 5) {
+        _nextBtn.backgroundColor = RGB(56, 165, 241);
+        _nextBtn.userInteractionEnabled = YES;
+    }else{
+        _nextBtn.backgroundColor = RGB(229, 229, 229);
+        _nextBtn.userInteractionEnabled = NO;
+    }
+}
+- (void)pushNextViewController{
+    WHLog(@"fasdgfg");
 }
 
 

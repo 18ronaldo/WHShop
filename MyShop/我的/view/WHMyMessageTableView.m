@@ -38,6 +38,7 @@
 //                                @{@"image":@"我的界面我的优惠券图标",@"title":@"我的优惠卷"},
 //                                @{@"image":@"我的界面邀请好友图标",@"title":@"邀请好友，立刻赚钱"}
 //                                ];
+        //从plist中加载
         _messageTableSource = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WHMyMessageTableSource" ofType:@"plist"]];
     }
     return _messageTableSource;

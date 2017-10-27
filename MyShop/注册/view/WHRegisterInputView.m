@@ -136,6 +136,8 @@
         [_nextBtn setTitle:@"下一步" forState:UIControlStateNormal];
         _nextBtn.backgroundColor = RGB(229, 229, 229);
         [_nextBtn setTitleColor:RGB(132, 132, 132) forState:UIControlStateNormal];
+        [_nextBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+        _nextBtn.selected = NO;
         _nextBtn.userInteractionEnabled = NO;
         [_nextBtn addTarget:self action:@selector(pushNextViewController) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -163,9 +165,11 @@
     if (textField.text.length == 11 && _passwordText.text.length > 5) {
         _nextBtn.backgroundColor = RGB(56, 165, 241);
         _nextBtn.userInteractionEnabled = YES;
+        _nextBtn.selected = YES;
     }else{
         _nextBtn.backgroundColor = RGB(229, 229, 229);
         _nextBtn.userInteractionEnabled = NO;
+        _nextBtn.selected = NO;
     }
 }
 //密码输入框修改内容时调用的方法
@@ -173,9 +177,11 @@
     if (_userNameText.text.length == 11 && textField.text.length > 5) {
         _nextBtn.backgroundColor = RGB(56, 165, 241);
         _nextBtn.userInteractionEnabled = YES;
+        _nextBtn.selected = YES;
     }else{
         _nextBtn.backgroundColor = RGB(229, 229, 229);
         _nextBtn.userInteractionEnabled = NO;
+        _nextBtn.selected = NO;
     }
 }
 - (void)pushNextViewController{

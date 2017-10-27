@@ -185,7 +185,6 @@
     }
 }
 - (void)pushNextViewController{
-    WHLog(@"fasdgfg");
     if (_nextBlock) {
         _nextBlock(@{@"username":_userNameText.text,
                      @"password":_passwordText.text

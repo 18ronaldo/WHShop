@@ -10,4 +10,7 @@
 
 @interface WHRegisterNextView : UIView
 
+/** 记录电话号码 **/
+@property(nonatomic,copy) NSString *phoneNumString;
+
 @end

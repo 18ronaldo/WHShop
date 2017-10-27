@@ -36,6 +36,7 @@
         [self addSubview:self.timeBtn];
         [self addSubview:self.lineLabel];
         [self addSubview:self.registerBtn];
+        [self GCDTime];
     }
     return self;
 }
@@ -76,6 +77,26 @@
     }];
 }
 
+- (void)setPhoneNumString:(NSString *)phoneNumString{
+    _phoneNumString = phoneNumString;
+    _tishiLabel.attributedText = [self makeTishiLabelAttributed];
+//    [_timeBtn setAttributedTitle:[self makeTimeButtonAttributed] forState:UIControlStateNormal];
+}
+//制作tishiLabel的属性文本
+- (NSMutableAttributedString *)makeTishiLabelAttributed{
+    NSMutableAttributedString *str1 = [[NSMutableAttributedString alloc] initWithString:@"验证码已发送到" attributes:@{NSForegroundColorAttributeName:RGB(139, 139, 139)}];
+    NSMutableAttributedString *str2 = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@" +86 %@",_phoneNumString] attributes:@{NSForegroundColorAttributeName:RGB(56, 166, 243)}];
+    [str1 insertAttributedString:str2 atIndex:str1.length];
+    return str1;
+}
+//制作TimeButton的属性文本
+- (NSMutableAttributedString *)makeTimeButtonAttributed:(NSInteger)time{
+    NSMutableAttributedString *str1 = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%li",time] attributes:@{NSForegroundColorAttributeName:RGB(56, 166, 243)}];
+    NSMutableAttributedString *str2 = [[NSMutableAttributedString alloc] initWithString:@"秒后重试" attributes:@{NSForegroundColorAttributeName:RGB(139, 139, 139)}];
+    [str1 insertAttributedString:str2 atIndex:str1.length];
+    return str1;
+}
+
 - (UILabel *)tishiLabel{
     if (!_tishiLabel) {
         _tishiLabel = [[UILabel alloc] init];
@@ -105,7 +126,7 @@
 - (UIButton *)timeBtn{
     if (!_timeBtn) {
         _timeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_timeBtn setTitle:@"30秒后重试" forState:UIControlStateNormal];
+        [_timeBtn addTarget:self action:@selector(GCDTime) forControlEvents:UIControlEventTouchUpInside];
         [_timeBtn setTitleColor:RGB(188, 188, 188) forState:UIControlStateNormal];
     }
     return _timeBtn;
@@ -148,6 +169,30 @@
         return NO;
     }
     return YES;
+}
+#pragma mark - time计时器
+- (void)GCDTime{
+    __block NSInteger time = 60;
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
+    dispatch_source_set_event_handler(timer, ^{
+        if (time < 1) {
+            dispatch_source_cancel(timer);
+            NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:@"重新发送" attributes:@{NSForegroundColorAttributeName:RGB(56, 166, 243)}];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                _timeBtn.userInteractionEnabled = YES;
+                [_timeBtn setAttributedTitle:string forState:UIControlStateNormal];
+            });
+        }else{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                _timeBtn.userInteractionEnabled = NO;
+                [_timeBtn setAttributedTitle:[self makeTimeButtonAttributed:time] forState:UIControlStateNormal];
+            });
+            time--;
+        }
+    });
+    dispatch_resume(timer);
 }
 
 

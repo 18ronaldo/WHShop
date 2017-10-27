@@ -38,6 +38,7 @@
 - (WHRegisterNextView *)registerNextView{
     if (!_registerNextView) {
         _registerNextView = [[WHRegisterNextView alloc] init];
+        _registerNextView.phoneNumString = _userMessageDict[@"username"];
     }
     return _registerNextView;
 }

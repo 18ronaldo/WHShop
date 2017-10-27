@@ -9,11 +9,14 @@
 #import "WHMyMessageTableViewCell.h"
 
 @interface WHMyMessageTableViewCell()
-
-@property(nonatomic,strong) UIImageView *iconImage;   /**图标*/
-@property(nonatomic,strong) UILabel *titleLabel;   /**cell中显示文字的label*/
-@property(nonatomic,strong) UIImageView *nextImage;   /**下一步image*/
-@property(nonatomic,strong) UILabel *lineLabel;   /**分割线*/
+/**图标*/
+@property(nonatomic,strong) UIImageView *iconImage;
+/**cell中显示文字的label*/
+@property(nonatomic,strong) UILabel *titleLabel;
+/**下一步image*/
+@property(nonatomic,strong) UIImageView *nextImage;
+/**分割线*/
+@property(nonatomic,strong) UILabel *lineLabel;
 
 @end
 @implementation WHMyMessageTableViewCell

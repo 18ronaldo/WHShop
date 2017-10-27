@@ -15,8 +15,8 @@
 
 /** 顶部登录和注册的view **/
 @property(nonatomic,strong) WHMyHeadView *headView;
-
-@property(nonatomic,strong) WHMyMessageTableView *messageTable;   /**展示功能列表*/
+/**展示功能列表*/
+@property(nonatomic,strong) WHMyMessageTableView *messageTable;
 
 @end
 

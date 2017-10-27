@@ -11,7 +11,8 @@
 
 @interface WHMyMessageTableView()<UITableViewDelegate,UITableViewDataSource>
 
-@property(nonatomic,strong) NSArray *messageTableSource;   /**message列表需要展示的数据源*/
+/**message列表需要展示的数据源*/
+@property(nonatomic,strong) NSArray *messageTableSource;
 
 @end
 

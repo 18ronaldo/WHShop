@@ -13,6 +13,8 @@
 		7B7FBC491FA1FEED00C984F3 /* WHMyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC481FA1FEED00C984F3 /* WHMyHeadView.m */; };
 		7B7FBC4B1FA2047700C984F3 /* WHMyMessageTableSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B7FBC4A1FA2047700C984F3 /* WHMyMessageTableSource.plist */; };
 		7B7FBC531FA20AB800C984F3 /* WHRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC521FA20AB800C984F3 /* WHRegisterViewController.m */; };
+		7B7FBC561FA2D85900C984F3 /* WHRegisterInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC551FA2D85900C984F3 /* WHRegisterInputView.m */; };
+		7B7FBC591FA2D87A00C984F3 /* WHThirdLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC581FA2D87A00C984F3 /* WHThirdLoginView.m */; };
 		7BFC6DAB1F9F000C006042AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DAA1F9F000C006042AE /* main.m */; };
 		7BFC6DAE1F9F000C006042AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DAD1F9F000C006042AE /* AppDelegate.m */; };
 		7BFC6DB61F9F000C006042AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFC6DB51F9F000C006042AE /* Assets.xcassets */; };
@@ -47,6 +49,10 @@
 		7B7FBC4A1FA2047700C984F3 /* WHMyMessageTableSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WHMyMessageTableSource.plist; sourceTree = "<group>"; };
 		7B7FBC511FA20AB800C984F3 /* WHRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRegisterViewController.h; sourceTree = "<group>"; };
 		7B7FBC521FA20AB800C984F3 /* WHRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRegisterViewController.m; sourceTree = "<group>"; };
+		7B7FBC541FA2D85900C984F3 /* WHRegisterInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRegisterInputView.h; sourceTree = "<group>"; };
+		7B7FBC551FA2D85900C984F3 /* WHRegisterInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRegisterInputView.m; sourceTree = "<group>"; };
+		7B7FBC571FA2D87A00C984F3 /* WHThirdLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHThirdLoginView.h; sourceTree = "<group>"; };
+		7B7FBC581FA2D87A00C984F3 /* WHThirdLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHThirdLoginView.m; sourceTree = "<group>"; };
 		7BFC6DA61F9F000C006042AE /* MyShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFC6DAA1F9F000C006042AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BFC6DAC1F9F000C006042AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -141,6 +147,10 @@
 		7B7FBC501FA20A6500C984F3 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7B7FBC541FA2D85900C984F3 /* WHRegisterInputView.h */,
+				7B7FBC551FA2D85900C984F3 /* WHRegisterInputView.m */,
+				7B7FBC571FA2D87A00C984F3 /* WHThirdLoginView.h */,
+				7B7FBC581FA2D87A00C984F3 /* WHThirdLoginView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -549,6 +559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B7FBC531FA20AB800C984F3 /* WHRegisterViewController.m in Sources */,
+				7B7FBC591FA2D87A00C984F3 /* WHThirdLoginView.m in Sources */,
 				7BFC6E0E1FA19126006042AE /* WHBuyCarViewController.m in Sources */,
 				7BFC6E0D1FA19126006042AE /* WHClassViewController.m in Sources */,
 				7BFC6E101FA19126006042AE /* WHTabBarViewController.m in Sources */,
@@ -558,6 +569,7 @@
 				7BFC6DAE1F9F000C006042AE /* AppDelegate.m in Sources */,
 				7B7FBC491FA1FEED00C984F3 /* WHMyHeadView.m in Sources */,
 				7BFC6DAB1F9F000C006042AE /* main.m in Sources */,
+				7B7FBC561FA2D85900C984F3 /* WHRegisterInputView.m in Sources */,
 				7B7FBC461FA1FC2500C984F3 /* WHMyMessageTableView.m in Sources */,
 				7BFC6E131FA19126006042AE /* WHTimeViewController.m in Sources */,
 			);

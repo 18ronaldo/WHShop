@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0C473F72F2D6B7B7D79BA3DE /* libPods-MyShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE9AAE0FB4402203A782168 /* libPods-MyShop.a */; };
 		7B7FBC431FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC421FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m */; };
+		7B7FBC461FA1FC2500C984F3 /* WHMyMessageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC451FA1FC2500C984F3 /* WHMyMessageTableView.m */; };
+		7B7FBC491FA1FEED00C984F3 /* WHMyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC481FA1FEED00C984F3 /* WHMyHeadView.m */; };
+		7B7FBC4B1FA2047700C984F3 /* WHMyMessageTableSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B7FBC4A1FA2047700C984F3 /* WHMyMessageTableSource.plist */; };
+		7B7FBC531FA20AB800C984F3 /* WHRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC521FA20AB800C984F3 /* WHRegisterViewController.m */; };
 		7BFC6DAB1F9F000C006042AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DAA1F9F000C006042AE /* main.m */; };
 		7BFC6DAE1F9F000C006042AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DAD1F9F000C006042AE /* AppDelegate.m */; };
 		7BFC6DB61F9F000C006042AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFC6DB51F9F000C006042AE /* Assets.xcassets */; };
@@ -36,6 +40,13 @@
 /* Begin PBXFileReference section */
 		7B7FBC411FA1C7BB00C984F3 /* WHMyMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMyMessageTableViewCell.h; sourceTree = "<group>"; };
 		7B7FBC421FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMyMessageTableViewCell.m; sourceTree = "<group>"; };
+		7B7FBC441FA1FC2500C984F3 /* WHMyMessageTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMyMessageTableView.h; sourceTree = "<group>"; };
+		7B7FBC451FA1FC2500C984F3 /* WHMyMessageTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMyMessageTableView.m; sourceTree = "<group>"; };
+		7B7FBC471FA1FEED00C984F3 /* WHMyHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMyHeadView.h; sourceTree = "<group>"; };
+		7B7FBC481FA1FEED00C984F3 /* WHMyHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMyHeadView.m; sourceTree = "<group>"; };
+		7B7FBC4A1FA2047700C984F3 /* WHMyMessageTableSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WHMyMessageTableSource.plist; sourceTree = "<group>"; };
+		7B7FBC511FA20AB800C984F3 /* WHRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRegisterViewController.h; sourceTree = "<group>"; };
+		7B7FBC521FA20AB800C984F3 /* WHRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRegisterViewController.m; sourceTree = "<group>"; };
 		7BFC6DA61F9F000C006042AE /* MyShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFC6DAA1F9F000C006042AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BFC6DAC1F9F000C006042AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +104,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7B7FBC4C1FA20A6500C984F3 /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				7B7FBC4D1FA20A6500C984F3 /* controller */,
+				7B7FBC4E1FA20A6500C984F3 /* model */,
+				7B7FBC4F1FA20A6500C984F3 /* tool */,
+				7B7FBC501FA20A6500C984F3 /* view */,
+			);
+			path = "注册";
+			sourceTree = "<group>";
+		};
+		7B7FBC4D1FA20A6500C984F3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B7FBC511FA20AB800C984F3 /* WHRegisterViewController.h */,
+				7B7FBC521FA20AB800C984F3 /* WHRegisterViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7B7FBC4E1FA20A6500C984F3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7B7FBC4F1FA20A6500C984F3 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		7B7FBC501FA20A6500C984F3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		7BFC6D9D1F9F000C006042AE = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +171,7 @@
 				7BFC6DAC1F9F000C006042AE /* AppDelegate.h */,
 				7BFC6DAD1F9F000C006042AE /* AppDelegate.m */,
 				7BFC6E141FA1B737006042AE /* WHMyShop.pch */,
+				7B7FBC4C1FA20A6500C984F3 /* 注册 */,
 				7BFC6DF91FA19126006042AE /* 控制器 */,
 				7BFC6E061FA19126006042AE /* 限时购 */,
 				7BFC6DEB1FA19126006042AE /* 分类 */,
@@ -282,6 +335,11 @@
 			children = (
 				7B7FBC411FA1C7BB00C984F3 /* WHMyMessageTableViewCell.h */,
 				7B7FBC421FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m */,
+				7B7FBC441FA1FC2500C984F3 /* WHMyMessageTableView.h */,
+				7B7FBC451FA1FC2500C984F3 /* WHMyMessageTableView.m */,
+				7B7FBC4A1FA2047700C984F3 /* WHMyMessageTableSource.plist */,
+				7B7FBC471FA1FEED00C984F3 /* WHMyHeadView.h */,
+				7B7FBC481FA1FEED00C984F3 /* WHMyHeadView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -422,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BFC6E111FA19126006042AE /* WHTabBarViewController.plist in Resources */,
+				7B7FBC4B1FA2047700C984F3 /* WHMyMessageTableSource.plist in Resources */,
 				7BFC6DB91F9F000C006042AE /* LaunchScreen.storyboard in Resources */,
 				7BFC6DB61F9F000C006042AE /* Assets.xcassets in Resources */,
 			);
@@ -489,6 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7FBC531FA20AB800C984F3 /* WHRegisterViewController.m in Sources */,
 				7BFC6E0E1FA19126006042AE /* WHBuyCarViewController.m in Sources */,
 				7BFC6E0D1FA19126006042AE /* WHClassViewController.m in Sources */,
 				7BFC6E101FA19126006042AE /* WHTabBarViewController.m in Sources */,
@@ -496,7 +556,9 @@
 				7B7FBC431FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m in Sources */,
 				7BFC6E121FA19126006042AE /* WHMyViewController.m in Sources */,
 				7BFC6DAE1F9F000C006042AE /* AppDelegate.m in Sources */,
+				7B7FBC491FA1FEED00C984F3 /* WHMyHeadView.m in Sources */,
 				7BFC6DAB1F9F000C006042AE /* main.m in Sources */,
+				7B7FBC461FA1FC2500C984F3 /* WHMyMessageTableView.m in Sources */,
 				7BFC6E131FA19126006042AE /* WHTimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

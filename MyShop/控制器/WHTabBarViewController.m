@@ -32,8 +32,14 @@
     // Do any additional setup after loading the view.
     
     UITabBarItem *tabBarItem = [UITabBarItem appearance];
-    [tabBarItem setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10.0f],NSForegroundColorAttributeName:[UIColor grayColor]} forState:UIControlStateNormal];
-    [tabBarItem setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10.0f],NSForegroundColorAttributeName:[UIColor colorWithRed:31.0/255.0 green:183.0/255.0 blue:242.0/255.0 alpha:1]} forState:UIControlStateSelected];
+    [tabBarItem setTitleTextAttributes:@{
+                                         NSFontAttributeName:[UIFont systemFontOfSize:10.0f],
+                                         NSForegroundColorAttributeName:[UIColor grayColor]
+                                         } forState:UIControlStateNormal];
+    [tabBarItem setTitleTextAttributes:@{
+                                         NSFontAttributeName:[UIFont systemFontOfSize:10.0f],
+                                         NSForegroundColorAttributeName:[UIColor colorWithRed:31.0/255.0 green:183.0/255.0 blue:242.0/255.0 alpha:1]
+                                         } forState:UIControlStateSelected];
     
     //添加子控制器
     for (NSDictionary *dict in self.tabBarMessageArray) {

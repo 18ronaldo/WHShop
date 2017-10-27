@@ -15,6 +15,9 @@
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define mainColor  [UIColor colorWithRed:242.0/255.0 green:242.0/255.0 blue:242.0/255.0 alpha:1]
 
+#define VIEW_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define VIEW_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
 #ifdef DEBUG                          //判断是不是开发，调试状态，如果是开发调试状态，就让WHLog替换NSLog
 #define WHLog(...) NSLod(__VA_ARGS__) //WHLog是不限制参数的，中间用三个英文句号(...)标识
 #elif                                 //如果是发布状态WHLog直接为空

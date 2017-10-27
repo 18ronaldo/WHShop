@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^nextViewControllerBlock)(NSDictionary *dict);
 @interface WHRegisterInputView : UIView
+
+/** 去往下一个控制器的回调block **/
+@property(nonatomic,copy) nextViewControllerBlock nextBlock;
 
 @end

@@ -7,8 +7,9 @@
 //
 
 #import "WHRegisterViewController.h"
-#import "WHRegisterInputView.h"
-#import "WHThirdLoginView.h"
+#import "WHRegisterInputView.h"//注册用户名密码输入的View
+#import "WHThirdLoginView.h"//第三方登录View
+#import "WHRegisterNextViewController.h"//注册页面下一步操作
 
 @interface WHRegisterViewController ()
 
@@ -52,6 +53,12 @@
 - (WHRegisterInputView *)registerInputView{
     if (!_registerInputView) {
         _registerInputView = [[WHRegisterInputView alloc] init];
+        __weak typeof(self) weakSelf = self;
+        _registerInputView.nextBlock = ^(NSDictionary *dict){
+            WHRegisterNextViewController *registerNextViewController = [[WHRegisterNextViewController alloc] init];
+            [weakSelf.navigationController pushViewController:registerNextViewController animated:YES];
+            registerNextViewController.userMessageDict = dict;
+        };
     }
     return _registerInputView;
 }

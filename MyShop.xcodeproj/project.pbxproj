@@ -15,6 +15,7 @@
 		7B7FBC531FA20AB800C984F3 /* WHRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC521FA20AB800C984F3 /* WHRegisterViewController.m */; };
 		7B7FBC561FA2D85900C984F3 /* WHRegisterInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC551FA2D85900C984F3 /* WHRegisterInputView.m */; };
 		7B7FBC591FA2D87A00C984F3 /* WHThirdLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC581FA2D87A00C984F3 /* WHThirdLoginView.m */; };
+		7B7FBC611FA30A5100C984F3 /* WHRegisterNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FBC601FA30A5100C984F3 /* WHRegisterNextViewController.m */; };
 		7BFC6DAB1F9F000C006042AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DAA1F9F000C006042AE /* main.m */; };
 		7BFC6DAE1F9F000C006042AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC6DAD1F9F000C006042AE /* AppDelegate.m */; };
 		7BFC6DB61F9F000C006042AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFC6DB51F9F000C006042AE /* Assets.xcassets */; };
@@ -53,6 +54,8 @@
 		7B7FBC551FA2D85900C984F3 /* WHRegisterInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRegisterInputView.m; sourceTree = "<group>"; };
 		7B7FBC571FA2D87A00C984F3 /* WHThirdLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHThirdLoginView.h; sourceTree = "<group>"; };
 		7B7FBC581FA2D87A00C984F3 /* WHThirdLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHThirdLoginView.m; sourceTree = "<group>"; };
+		7B7FBC5F1FA30A5100C984F3 /* WHRegisterNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRegisterNextViewController.h; sourceTree = "<group>"; };
+		7B7FBC601FA30A5100C984F3 /* WHRegisterNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRegisterNextViewController.m; sourceTree = "<group>"; };
 		7BFC6DA61F9F000C006042AE /* MyShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFC6DAA1F9F000C006042AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BFC6DAC1F9F000C006042AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 			children = (
 				7B7FBC511FA20AB800C984F3 /* WHRegisterViewController.h */,
 				7B7FBC521FA20AB800C984F3 /* WHRegisterViewController.m */,
+				7B7FBC5A1FA30A0E00C984F3 /* 下一步 */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -151,6 +155,48 @@
 				7B7FBC551FA2D85900C984F3 /* WHRegisterInputView.m */,
 				7B7FBC571FA2D87A00C984F3 /* WHThirdLoginView.h */,
 				7B7FBC581FA2D87A00C984F3 /* WHThirdLoginView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7B7FBC5A1FA30A0E00C984F3 /* 下一步 */ = {
+			isa = PBXGroup;
+			children = (
+				7B7FBC5B1FA30A0E00C984F3 /* controller */,
+				7B7FBC5C1FA30A0E00C984F3 /* model */,
+				7B7FBC5D1FA30A0E00C984F3 /* tool */,
+				7B7FBC5E1FA30A0E00C984F3 /* view */,
+			);
+			name = "下一步";
+			path = "../下一步";
+			sourceTree = "<group>";
+		};
+		7B7FBC5B1FA30A0E00C984F3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B7FBC5F1FA30A5100C984F3 /* WHRegisterNextViewController.h */,
+				7B7FBC601FA30A5100C984F3 /* WHRegisterNextViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7B7FBC5C1FA30A0E00C984F3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7B7FBC5D1FA30A0E00C984F3 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		7B7FBC5E1FA30A0E00C984F3 /* view */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -563,6 +609,7 @@
 				7BFC6E0E1FA19126006042AE /* WHBuyCarViewController.m in Sources */,
 				7BFC6E0D1FA19126006042AE /* WHClassViewController.m in Sources */,
 				7BFC6E101FA19126006042AE /* WHTabBarViewController.m in Sources */,
+				7B7FBC611FA30A5100C984F3 /* WHRegisterNextViewController.m in Sources */,
 				7BFC6E0F1FA19126006042AE /* WHNavigationController.m in Sources */,
 				7B7FBC431FA1C7BB00C984F3 /* WHMyMessageTableViewCell.m in Sources */,
 				7BFC6E121FA19126006042AE /* WHMyViewController.m in Sources */,

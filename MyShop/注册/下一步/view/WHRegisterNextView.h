@@ -13,4 +13,6 @@
 /** 记录电话号码 **/
 @property(nonatomic,copy) NSString *phoneNumString;
 
+- (void)GCDTime;
+
 @end

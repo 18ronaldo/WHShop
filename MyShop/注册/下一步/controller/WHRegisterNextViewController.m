@@ -7,7 +7,8 @@
 //
 
 #import "WHRegisterNextViewController.h"
-#import "WHRegisterNextView.h"
+#import "WHRegisterNextView.h"//注册下一步view
+#import <AFNetworking.h>
 
 @interface WHRegisterNextViewController ()
 
@@ -24,15 +25,36 @@
     self.edgesForExtendedLayout = 0;
     self.title = @"验证手机号";
     
+    [self addController];
+    [self requestCodeNumber];
+    WHLog(@"用户名和密码:%@",_userMessageDict);
+}
+//加载控件
+- (void)addController{
     [self.view addSubview:self.registerNextView];
     __weak typeof(self) weakSelf = self;
     [_registerNextView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.equalTo(weakSelf.view);
         make.height.mas_equalTo(@150);
     }];
-    
-    WHLog(@"用户名和密码:%@",_userMessageDict);
-    
+}
+//请求验证码
+- (void)requestCodeNumber{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
+    //http://123.57.141.249:8080/beautalk/appMember/createCode.do
+    [manager POST:@"http://123.57.141.249:8080/beautalk/appMember/createCode.do" parameters:@{@"MemberId":_userMessageDict[@"username"]} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        WHLog(@"responseObject:%@",responseObject);
+        if ([responseObject[@"result"] isEqualToString:@"sucess"]) {
+            [self.registerNextView GCDTime];
+        }else if ([responseObject[@"result"] isEqualToString:@"TelephoneExistError"]){
+            WHLog(@"手机号已近被注册");
+        }else{
+            WHLog(@"验证码请求失败");
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        WHLog(@"error:%@",error);
+    }];
 }
 
 - (WHRegisterNextView *)registerNextView{
